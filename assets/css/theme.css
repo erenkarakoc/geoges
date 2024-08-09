@@ -2047,7 +2047,6 @@ h6,
 	visibility: hidden;
 	text-align: start;
 	pointer-events: none;
-	transform: translateY(10px);
 	transition: all 0.85s cubic-bezier(0.19, 1, 0.22, 1);
 	transition-property: transform, opacity, visibility;
 }
@@ -2123,8 +2122,8 @@ h6,
 	transform: translateY(0);
 }
 
-.lqd-submenu-toggle-click .nav-item-children {
-	display: none;
+.main-nav li:hover .nav-item-children,
+.nav-item-children:hover {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
@@ -24348,7 +24347,7 @@ ul.pagination .prev {
 }
 
 .lqd-vslider-ext p {
-	font-size: 24px;
+	font-size: 16px;
 }
 
 .lqd-vslider-ext .lqd-highlight-custom-underline .lqd-highlight-inner {
