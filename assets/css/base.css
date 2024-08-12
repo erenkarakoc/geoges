@@ -19,6 +19,16 @@
   --lqd-color-gray-900: #191919;
   --lqd-color-green-700: #121b1d;
   --lqd-color-green-900: #0b1415;
+  --lqd-color-blue: #4994df;
+  --lqd-color-blue-10: #4994df10;
+  --lqd-color-blue-20: #4994df20;
+  --lqd-color-blue-30: #4994df30;
+  --lqd-color-blue-40: #4994df40;
+  --lqd-color-blue-50: #4994df50;
+  --lqd-color-blue-60: #4994df60;
+  --lqd-color-blue-70: #4994df70;
+  --lqd-color-blue-80: #4994df80;
+  --lqd-color-blue-90: #4994df90;
   --lqd-color-slate-300: rgba(9, 94, 193, 0.11);
   --lqd-color-slate-400: #99a4a8;
   --lqd-color-red-100: rgba(193, 9, 9, 0.11);
@@ -70,6 +80,10 @@
   margin-inline-end: 1em;
   border-radius: 50em;
   background: #000;
+}
+
+.one-bullet-list li.no-bullet::before {
+  content: none;
 }
 
 /* ***** Main Header ***** */
