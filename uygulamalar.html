@@ -36,47 +36,31 @@
 		<div class="lqd-sticky-placeholder hidden"></div>
 
 		<header
-			class="site-header main-header sticky-header-noshadow main-header-dynamiccolors bg-center-top bg-repeat bg-white"
-			style="background-image: url(./assets/images/bg-lines.svg);" data-sticky-header="true"
-			data-sticky-values-measured="false"
+			class="site-header main-header main-header-overlay sticky-header-noshadow main-header-dynamiccolors is-not-stuck"
+			data-sticky-header="true" data-sticky-values-measured="false"
 			data-sticky-options='{"disableOnMobile":true,"stickyTrigger":"first-section","dynamicColors":true}'>
 			<div class="lqd-head-sec-wrap lqd-hide-onstuck relative pr-35 pl-20 md:hidden">
-				<div class="w-full flex items-center justify-between">
-					<div class="col col-lg-5 lqd-head-col flex-grow-1 justify-start">
-						<div class="header-module module-primary-nav static">
-							<div class="navbar-collapse lqd-submenu-default-style inline-flex flex-col items-stretch h-full"
-								aria-expanded="false" role="navigation">
-								<div class="header-module module-button ml-25 module-button lg:hidden">
-									<a href="#iletisim"
-										class="btn btn-solid btn-sm round border-thin leading-1/6em tracking-0 text-15 rounded-4 bg-black border-black"
-										data-lity="#iletisim">
-										<span class="btn-txt text-white" data-text="İletişime Geç">İletişime Geç</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col col-lg-2 lqd-head-col flex-grow-1 justify-center">
-						<div class="header-module module-logo no-rotate navbar-brand-plain pt-40 pb-30">
+				<div class="lqd-head-sec w-full flex items-stretch justify-between">
+					<div class="col col-lg-2 lqd-head-col flex-grow-1 justify-start">
+						<div class="header-module module-logo no-rotate navbar-brand-plain pt-30 pb-30">
 							<a class="navbar-brand" href="/" rel="home">
 								<span class="navbar-brand-inner">
-									<img class="logo-light" src="./assets/images/logo-light.svg" alt="Geoges">
-									<img class="logo-default" src="./assets/images/logo-colored.svg" alt="Geoges">
+									<img class="logo-default" src="./assets/images/logo-light.svg" alt="Geoges">
 								</span>
 							</a>
 						</div>
 					</div>
-					<div class="col col-lg-5 auto lqd-head-col flex-grow-1 justify-end">
+					<div class="col col-lg-8 auto lqd-head-col flex-grow-1 justify-center">
 						<div class="header-module module-primary-nav static">
 							<div class="navbar-collapse lqd-submenu-default-style inline-flex flex-col items-stretch h-full"
 								aria-expanded="false" role="navigation">
 								<ul
-									class="main-nav lqd-menu-counter-right main-nav-hover-default flex reset-ul flex-nowrap items-stretch justify-end link-16 link-medium link-black"
+									class="main-nav lqd-menu-counter-right main-nav-hover-default flex reset-ul flex-nowrap items-stretch justify-end link-16 link-medium link-white"
 									data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true"
 									data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
 									<li>
-										<a href="#ana-sayfa">
-											Ana Sayfa
+										<a href="hakkimizda.html">
+											Hakkımızda
 										</a>
 									</li>
 									<li>
@@ -90,11 +74,25 @@
 										</a>
 									</li>
 									<li>
-										<a href="hakkimizda.html">
-											Hakkımızda
+										<a href="referanslarimiz.html">
+											Referanslar
 										</a>
 									</li>
 								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col col-lg-2 lqd-head-col flex-grow-1 justify-end">
+						<div class="header-module module-primary-nav static">
+							<div class="navbar-collapse lqd-submenu-default-style inline-flex flex-col items-stretch h-full"
+								aria-expanded="false" role="navigation">
+								<div class="header-module module-button ml-25 module-button lg:hidden">
+									<a href="#iletisim"
+										class="btn btn-solid btn-sm round border-thin leading-1/6em tracking-0 text-15 rounded-4 bg-black border-black"
+										data-lity="#iletisim">
+										<span class="btn-txt text-white" data-text="İletişime Geç">İletişime Geç</span>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -102,116 +100,26 @@
 			</div>
 		</header>
 
-		<main class="content bg-center-top bg-repeat z-2 bg-white" id="lqd-site-content"
-			style="background-image: url(./assets/images/bg-lines.svg);">
+		<main class="content bg-white" id="lqd-site-content">
 			<div id="lqd-contents-wrap">
-				<!-- Start Portfolio -->
-				<section class="lqd-section portfolio pt-30 pb-60" data-section-luminosity="light">
-					<div class="container-fluid p-0">
+
+				<!-- Start Banner -->
+				<section class="lqd-section banner-our-approach bg-no-repeat bg-cover bg-center pt-150 pb-0" id="banner"
+					style="background-image: url(./assets/images/banner/toprakarme-duvar.jpg);" data-section-luminosity="dark">
+					<div class="liquid-row-overlay w-full h-full block absolute top-0 left-0 transition-all bg-black-20"></div>
+					<span class="lqd-extra-cursor fixed"></span>
+					<div class="container">
 						<div class="row">
-							<div class="col col-12">
-								<div
-									class="carousel-container carousel-nav-left carousel-nav-mobile-center no carousel-nav-md carousel-dots-mobile-center carousel-dots-style1 carousel-dots-mobile-outside">
-									<div class="carousel-items"
-										data-lqd-flickity='{"cellSelector":".carousel-item","cellAlign":"center","prevNextButtons":false,"pageDots":false,"groupCells":true,"wrapAround":true,"pauseAutoPlayOnHover":false,"buttonsAppendTo":"self","addSlideNumbersToArrows":false,"dotsIndicator":"dots","numbersStyle":"circle","dotsAppendTo":"self"}'>
-										<div class="carousel-item has-width">
-											<div class="carousel-item-inner">
-												<div class="carousel-item-content">
-													<div class="flex flex-grow-1 items-center">
-														<figure style="height: 500px; width: 500px;"
-															class="max-w-full relative inline-flex flex-grow-1 vertical-top m-0">
-															<img style="height: 100%; width: 100%; object-fit: cover;"
-																src="./assets/images/banner/gabion.jpg" alt="Gabion">
-														</figure>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="carousel-item has-width">
-											<div class="carousel-item-inner">
-												<div class="carousel-item-content">
-													<div class="flex flex-grow-1 items-center">
-														<figure style="height: 500px; width: 500px;"
-															class="max-w-full relative inline-flex flex-grow-1 vertical-top m-0">
-															<img style="height: 100%; width: 100%; object-fit: cover;"
-																src="./assets/images/banner/geoarme-duvar.jpg" alt="Geoarme Duvar">
-														</figure>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="carousel-item has-width">
-											<div class="carousel-item-inner">
-												<div class="carousel-item-content">
-													<div class="flex flex-grow-1 items-center">
-														<figure style="height: 500px; width: 500px;"
-															class="max-w-full relative inline-flex flex-grow-1 vertical-top m-0">
-															<img style="height: 100%; width: 100%; object-fit: cover;"
-																src="./assets/images/banner/geocell.jpg" alt="Geocell">
-														</figure>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="carousel-item has-width">
-											<div class="carousel-item-inner">
-												<div class="carousel-item-content">
-													<div class="flex flex-grow-1 items-center">
-														<figure style="height: 500px; width: 500px;"
-															class="max-w-full relative inline-flex flex-grow-1 vertical-top m-0">
-															<img style="height: 100%; width: 100%; object-fit: cover;"
-																src="./assets/images/banner/harpusta.jpg" alt="Harpuşta">
-														</figure>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="carousel-item has-width">
-											<div class="carousel-item-inner">
-												<div class="carousel-item-content">
-													<div class="flex flex-grow-1 items-center">
-														<figure style="height: 500px; width: 500px;"
-															class="max-w-full relative inline-flex flex-grow-1 vertical-top m-0">
-															<img style="height: 100%; width: 100%; object-fit: cover;"
-																src="./assets/images/banner/on-yuzlu-bloklu-duvar.jpg" alt="Ön Yüzü Bloklu Duvar">
-														</figure>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="carousel-item has-width">
-											<div class="carousel-item-inner">
-												<div class="carousel-item-content">
-													<div class="flex flex-grow-1 items-center">
-														<figure style="height: 500px; width: 500px;"
-															class="max-w-full relative inline-flex flex-grow-1 vertical-top m-0">
-															<img style="height: 100%; width: 100%; object-fit: cover;"
-																src="./assets/images/banner/prekast-panelton.jpg" alt="Prekast Panelton">
-														</figure>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="carousel-item has-width">
-											<div class="carousel-item-inner">
-												<div class="carousel-item-content">
-													<div class="flex flex-grow-1 items-center">
-														<figure style="height: 500px; width: 500px;"
-															class="max-w-full relative inline-flex flex-grow-1 vertical-top m-0">
-															<img style="height: 100%; width: 100%; object-fit: cover;"
-																src="./assets/images/banner/toprakarme-duvar.jpg" alt="Toprakarme Duvar">
-														</figure>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+							<div class="col col-12 text-center" data-custom-animations="true"
+								data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1800","delay":"180","ease":"power4.out","direction":"forward","initValues":{"y":120,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":0},"animations":{"y":0,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":1}}'>
+								<h1 class="ld-fh-element relative mb-0 text-100 font-bold text-white" style="line-height: 1.4;">
+									Uygulamalarımız
+								</h1>
 							</div>
 						</div>
 					</div>
 				</section>
-				<!-- End Portfolio -->
+				<!-- End Banner -->
 
 				<!-- Start What We Do -->
 				<section class="lqd-section what-we-do py-30" data-custom-animations="true"

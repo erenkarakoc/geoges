@@ -41,27 +41,26 @@
 			data-sticky-options='{"disableOnMobile":true,"stickyTrigger":"first-section","dynamicColors":true}'>
 			<div class="lqd-head-sec-wrap lqd-hide-onstuck relative pr-35 pl-20 md:hidden">
 				<div class="lqd-head-sec w-full flex items-stretch justify-between">
-					<div class="col-auto lqd-head-col flex-grow-1 justify-start">
-						<div class="header-module module-logo no-rotate navbar-brand-plain pt-40 pb-30">
+					<div class="col col-lg-2 lqd-head-col flex-grow-1 justify-start">
+						<div class="header-module module-logo no-rotate navbar-brand-plain pt-30 pb-30">
 							<a class="navbar-brand" href="/" rel="home">
 								<span class="navbar-brand-inner">
-									<img class="logo-dark" src="./assets/images/logo-colored.svg" alt="Hub Theme">
-									<img class="logo-default" src="./assets/images/logo-light.svg" alt="Hub Theme">
+									<img class="logo-default" src="./assets/images/logo-light.svg" alt="Geoges">
 								</span>
 							</a>
 						</div>
 					</div>
-					<div class="col-auto lqd-head-col flex-grow-1 justify-end">
+					<div class="col col-lg-8 auto lqd-head-col flex-grow-1 justify-center">
 						<div class="header-module module-primary-nav static">
 							<div class="navbar-collapse lqd-submenu-default-style inline-flex flex-col items-stretch h-full"
-								id="main-header-collapse" aria-expanded="false" role="navigation">
+								aria-expanded="false" role="navigation">
 								<ul
 									class="main-nav lqd-menu-counter-right main-nav-hover-default flex reset-ul flex-nowrap items-stretch justify-end link-16 link-medium link-white"
 									data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true"
 									data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
 									<li>
-										<a href="/">
-											Ana Sayfa
+										<a href="hakkimizda.html">
+											Hakkımızda
 										</a>
 									</li>
 									<li>
@@ -75,19 +74,26 @@
 										</a>
 									</li>
 									<li>
-										<a href="hakkimizda.html">
-											Hakkımızda
+										<a href="referanslarimiz.html">
+											Referanslar
 										</a>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div class="header-module module-button ml-25 module-button lg:hidden">
-							<a href="#iletisim"
-								class="btn btn-solid btn-sm round border-thin leading-1/6em tracking-0 text-15 rounded-4 bg-black border-black text-white hover:bg-white hover:text-black"
-								data-lity="#iletisim">
-								<span class="btn-txt" data-text="İletişime Geç">İletişime Geç</span>
-							</a>
+					</div>
+					<div class="col col-lg-2 lqd-head-col flex-grow-1 justify-end">
+						<div class="header-module module-primary-nav static">
+							<div class="navbar-collapse lqd-submenu-default-style inline-flex flex-col items-stretch h-full"
+								aria-expanded="false" role="navigation">
+								<div class="header-module module-button ml-25 module-button lg:hidden">
+									<a href="#iletisim"
+										class="btn btn-solid btn-sm round border-thin leading-1/6em tracking-0 text-15 rounded-4 bg-black border-black"
+										data-lity="#iletisim">
+										<span class="btn-txt text-white" data-text="İletişime Geç">İletişime Geç</span>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -98,16 +104,14 @@
 			<div id="lqd-contents-wrap">
 
 				<!-- Start Banner -->
-				<section class="lqd-section banner-case-studies pt-140 pb-50 0 bg-no-repeat bg-cover bg-center" id="banner"
+				<section class="lqd-section banner-case-studies bg-no-repeat bg-cover bg-center pt-150 pb-0" id="banner"
 					style="background-image: url(./assets/images/banner/geocell.jpg);" data-section-luminosity="dark">
 					<div class="container">
 						<div class="row">
-							<div class="col col-12 text-center">
-								<h1
-									class="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default lqd-split-chars mb-0 text-60 text-white"
-									data-split-text="true" data-split-options='{"type":"chars, words"}' data-custom-animations="true"
-									data-ca-options='{"triggerHandler":"inview","animationTarget":".lqd-chars > .split-inner","duration":"1800","delay":"80","ease":"power4.out","direction":"forward","initValues":{"opacity":0},"animations":{"opacity":1}}'>
-									Tüm Ürünlerimiz
+							<div class="col col-12 text-center" data-custom-animations="true"
+								data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1800","delay":"180","ease":"power4.out","direction":"forward","initValues":{"y":120,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":0},"animations":{"y":0,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":1}}'>
+								<h1 class="ld-fh-element relative mb-0 text-100 font-bold text-white" style="line-height: 1;">
+									Ürünlerimiz
 								</h1>
 							</div>
 						</div>
@@ -130,16 +134,16 @@
 										id="section-nav" data-localscroll="true"
 										data-localscroll-options='{"itemsSelector":"> li > a","trackWindowScroll":true,"includeParentAsOffset":true,"offsetElements":"[data-sticky-header] .lqd-head-sec-wrap:not(.lqd-hide-onstuck), #wpadminbar"}'>
 										<li class="p-1em justify-center">
-											<a class="leading-1/75em justify-center" href="#hizmetlerimiz">
+											<a class="leading-1/75em justify-center" href="#hakkimizda">
 												<span class="link-icon right-icon text-left">
 													<i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
 												</span>
-												<span>Hizmetlerimiz</span>
+												<span>Hakkımızda</span>
 											</a>
 											<span
 												class="lqd-scrl-indc lqd-scrl-indc-h lqd-scrl-indc-scale w-full flex absolute bottom-0 left-0 whitespace-nowrap"
 												data-lqd-scroll-indicator="true"
-												data-scrl-indc-options='{"scrollingTarget": "#hizmetlerimiz", "dir": "x", "scale": true, "start": "top bottom", "end": "top top-=99.65%"}'>
+												data-scrl-indc-options='{"scrollingTarget": "#hakkimizda", "dir": "x", "scale": true, "start": "top bottom", "end": "top top-=99.65%"}'>
 												<span class="lqd-scrl-indc-inner h-full flex items-center">
 													<span class="lqd-scrl-indc-line relative bg-black-10">
 														<span class="lqd-scrl-indc-el absolute"></span>
@@ -158,24 +162,6 @@
 												class="lqd-scrl-indc lqd-scrl-indc-h lqd-scrl-indc-scale w-full flex absolute bottom-0 left-0 whitespace-nowrap"
 												data-lqd-scroll-indicator="true"
 												data-scrl-indc-options='{"scrollingTarget": "#urunlerimiz", "dir": "x", "scale": true, "start": "top bottom", "end": "top top-=99.65%"}'>
-												<span class="lqd-scrl-indc-inner h-full flex items-center">
-													<span class="lqd-scrl-indc-line relative bg-black-10">
-														<span class="lqd-scrl-indc-el absolute"></span>
-													</span>
-												</span>
-											</span>
-										</li>
-										<li class="hidden p-1em justify-center">
-											<a class="leading-1/75em justify-center" href="#surec">
-												<span class="link-icon right-icon text-left">
-													<i class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
-												</span>
-												<span>Süreç</span>
-											</a>
-											<span
-												class="lqd-scrl-indc lqd-scrl-indc-h lqd-scrl-indc-scale w-full flex absolute bottom-0 left-0 whitespace-nowrap"
-												data-lqd-scroll-indicator="true"
-												data-scrl-indc-options='{"scrollingTarget": "#surec", "dir": "x", "scale": true, "start": "top bottom", "end": "top top-=99.65%"}'>
 												<span class="lqd-scrl-indc-inner h-full flex items-center">
 													<span class="lqd-scrl-indc-line relative bg-black-10">
 														<span class="lqd-scrl-indc-el absolute"></span>
@@ -210,7 +196,7 @@
 				<!-- End Section Navigation -->
 
 				<!-- Start Services Accordion -->
-				<section class="lqd-section services-accordion pt-65 pb-35" id="hizmetlerimiz" data-section-luminosity="light">
+				<section class="lqd-section services-accordion pt-100" id="hakkimizda" data-section-luminosity="light">
 					<div class="container">
 						<div class="row">
 							<div class="col col-12 col-md-6 text-start module-first" data-custom-animations="true"
@@ -356,156 +342,227 @@
 				</section>
 				<!-- End Services Accordion -->
 
-				<!-- Start Services -->
-				<section class="hidden lqd-section services pt-35 pb-40 sm:pt-0" data-custom-animations="true"
-					data-ca-options='{"triggerHandler":"inview","animationTarget":"h6, h2, p","duration":"1800","delay":"180","ease":"power4.out","direction":"forward","initValues":{"x":30,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":0},"animations":{"x":0,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":1}}'>
-					<div class="container">
-						<div class="row items-end">
-							<div class="col col-12 col-xl-5 col-md-6">
-								<h6
-									class="ld-fh-element mb-1/2em py-5 px-15 tracking-0/1em font-semibold text-13 text-black bg-gray-200 rounded-100 uppercase">
-									Services</h6>
-								<h2 class="ld-fh-element mb-0/85em font-medium leading-1/15em text-28"> Tailor made digital products and
-									creative solutions for businesses.</h2>
-							</div>
-							<div class="col col-12 offset-xl-2 col-md-5">
-								<p class="ld-fh-element mb-1/25em leading-1/5em text-16 text-black"> Through a deep understanding of our
-									audience’s makeup and motivations, we design digital experiences that connect with people.</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End Services -->
-
 				<!-- Start Case Studies Row -->
-				<section class="hidden lqd-section case-studies-row" id="urunlerimiz" data-section-luminosity="light"
+				<section class="lqd-section case-studies-row pt-100" id="urunlerimiz" data-section-luminosity="light"
 					data-custom-animations="true"
 					data-ca-options='{"triggerHandler":"inview","animationTarget":".animation-element","duration":"1800","delay":"180","ease":"power4.out","direction":"forward","initValues":{"x":60,"scaleX":0.85,"scaleY":0.85,"rotationY":35,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":0},"animations":{"x":0,"scaleX":1,"scaleY":1,"rotationY":0,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"-180px","opacity":1}}'>
-					<div class="container-fluid p-0">
-						<div class="row m-0">
-							<div class="col col-12 col-md-6 col-lg-3 p-0 animation-element">
-								<div class="lqd-fb round h-pt-125 lqd-fb-style-6 relative rounded-4" data-lqd-zindex="true">
-									<div class="lqd-fb-inner lqd-overlay">
-										<div class="lqd-fb-shadow"></div>
-										<div class="flex flex-wrap items-center lqd-overlay perspective backface-hidden"
-											data-hover3d="true">
-											<div
-												class="lqd-fb-content-wrap lqd-overlay will-change-transform transform-style-3d backface-hidden"
-												data-stacking-factor="0.5">
-												<div class="lqd-fb-img lqd-overlay rounded-4 overflow-hidden">
-													<figure class="w-full h-full" data-responsive-bg="true">
-														<img class="h-full object-cover visibility-hidden" width="720" height="813"
-															src="./assets/images/case-studies/case-studies-row-1.jpg" alt="case studies">
-													</figure>
-													<div class="lqd-fb-bg lqd-overlay"></div>
-													<div class="lqd-fb-hover-overlay lqd-overlay"></div>
-												</div>
-												<div class="lqd-fb-content lqd-overlay flex items-end">
-													<div class="lqd-fb-content-inner relative w-full py-3rem px-3/5rem">
-														<span class="lqd-fb-icon flex mb-2rem">
-															<i class="lqd-icn-ess icon-lqd-atom"></i>
-														</span>
-														<h6 class="mb-1rem font-bold uppercase ltr-sp-2">FOR DEVELOPERS AND STARTUPS</h6>
-														<h2 class="mb-0 font-bold text-32">Search Engine Opt.</h2>
-													</div>
-												</div>
-											</div>
+					<div class="container">
+						<div class="row">
+							<div class="col col-12 col-md-6 col-lg-4 px-20">
+								<article class="lqd-pf-item relative lqd-pf-item-style-2 pf-details-h-str">
+									<div class="lqd-pf-item-inner">
+										<div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
+											<figure>
+												<img src="./assets/images/urunler/geogridler.webp" class="w-full" alt="Geogridler">
+											</figure>
+											<span
+												class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-54 text-white bg-black-10">
+												<i class="lqd-icn-ess icon-md-arrow-forward inline-block opacity-0 transition-all"></i>
+											</span>
 										</div>
+										<div class="lqd-pf-details">
+											<h2 class="mb-0/2em h5">Geogridler</h2>
+											<ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
+												<li>
+													<a href="#">Geosentetik</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="lqd-overlay lqd-pf-overlay-link lqd-cc-icon-trigger"></a>
 									</div>
-								</div>
+								</article>
 							</div>
-							<div class="col col-12 col-md-6 col-lg-3 p-0 animation-element">
-								<div class="lqd-fb round h-pt-125 lqd-fb-style-6 relative rounded-4" data-lqd-zindex="true">
-									<div class="lqd-fb-inner lqd-overlay">
-										<div class="lqd-fb-shadow"></div>
-										<div class="flex flex-wrap items-center lqd-overlay perspective backface-hidden"
-											data-hover3d="true">
-											<div
-												class="lqd-fb-content-wrap lqd-overlay will-change-transform transform-style-3d backface-hidden"
-												data-stacking-factor="0.5">
-												<div class="lqd-fb-img lqd-overlay rounded-4 overflow-hidden">
-													<figure class="w-full h-full" data-responsive-bg="true">
-														<img class="h-full object-cover visibility-hidden" width="726" height="817"
-															src="./assets/images/case-studies/case-studies-row-2.jpg" alt="case studies">
-													</figure>
-													<div class="lqd-fb-bg lqd-overlay"></div>
-													<div class="lqd-fb-hover-overlay lqd-overlay"></div>
-												</div>
-												<div class="lqd-fb-content lqd-overlay flex items-end">
-													<div class="lqd-fb-content-inner relative w-full py-3rem px-3/5rem">
-														<span class="lqd-fb-icon flex mb-2rem">
-															<i class="lqd-icn-ess icon-lqd-compass"></i>
-														</span>
-														<h6 class="mb-1rem font-bold uppercase ltr-sp-2">FOR DEVELOPERS AND STARTUPS</h6>
-														<h2 class="mb-0 font-bold text-32">Web Development</h2>
-													</div>
-												</div>
-											</div>
+							<div class="col col-12 col-md-6 col-lg-4 px-20">
+								<article class="lqd-pf-item relative lqd-pf-item-style-2 pf-details-h-str">
+									<div class="lqd-pf-item-inner">
+										<div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
+											<figure>
+												<img src="./assets/images/urunler/gabionlar.webp" class="w-full" alt="Gabionlar">
+											</figure>
+											<span
+												class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-54 text-white bg-black-10">
+												<i class="lqd-icn-ess icon-md-arrow-forward inline-block opacity-0 transition-all"></i>
+											</span>
 										</div>
+										<div class="lqd-pf-details">
+											<h2 class="mb-0/2em h5">Gabionlar</h2>
+											<ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
+												<li>
+													<a href="#">Geoarme Duvar</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="lqd-overlay lqd-pf-overlay-link lqd-cc-icon-trigger"></a>
 									</div>
-								</div>
+								</article>
 							</div>
-							<div class="col col-12 col-md-6 col-lg-3 p-0 animation-element">
-								<div class="lqd-fb round h-pt-125 lqd-fb-style-6 relative rounded-4" data-lqd-zindex="true">
-									<div class="lqd-fb-inner lqd-overlay">
-										<div class="lqd-fb-shadow"></div>
-										<div class="flex flex-wrap items-center lqd-overlay perspective backface-hidden"
-											data-hover3d="true">
-											<div
-												class="lqd-fb-content-wrap lqd-overlay will-change-transform transform-style-3d backface-hidden"
-												data-stacking-factor="0.5">
-												<div class="lqd-fb-img lqd-overlay rounded-4 overflow-hidden">
-													<figure class="w-full h-full" data-responsive-bg="true">
-														<img class="h-full object-cover visibility-hidden" width="722" height="813"
-															src="./assets/images/case-studies/case-studies-row-3.jpg" alt="case studies">
-													</figure>
-													<div class="lqd-fb-bg lqd-overlay"></div>
-													<div class="lqd-fb-hover-overlay lqd-overlay"></div>
-												</div>
-												<div class="lqd-fb-content lqd-overlay flex items-end">
-													<div class="lqd-fb-content-inner relative w-full py-3rem px-3/5rem">
-														<span class="lqd-fb-icon flex mb-2rem">
-															<i class="lqd-icn-ess icon-lqd-feather"></i>
-														</span>
-														<h6 class="mb-1rem font-bold uppercase ltr-sp-2">FOR DEVELOPERS AND STARTUPS</h6>
-														<h2 class="mb-0 font-bold text-32">Branding Strategy</h2>
-													</div>
-												</div>
-											</div>
+							<div class="col col-12 col-md-6 col-lg-4 px-20">
+								<article class="lqd-pf-item relative lqd-pf-item-style-2 pf-details-h-str">
+									<div class="lqd-pf-item-inner">
+										<div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
+											<figure>
+												<img src="./assets/images/banner/toprakarme-duvar.jpg" class="w-full" alt="Test Ürünü">
+											</figure>
+											<span
+												class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-54 text-white bg-black-10">
+												<i class="lqd-icn-ess icon-md-arrow-forward inline-block opacity-0 transition-all"></i>
+											</span>
 										</div>
+										<div class="lqd-pf-details">
+											<h2 class="mb-0/2em h5">Test Ürünü</h2>
+											<ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
+												<li>
+													<a href="#">Geosentetik</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="lqd-overlay lqd-pf-overlay-link lqd-cc-icon-trigger"></a>
 									</div>
-								</div>
+								</article>
 							</div>
-							<div class="col col-12 col-md-6 col-lg-3 p-0 animation-element">
-								<div class="lqd-fb round h-pt-125 lqd-fb-style-6 relative rounded-4" data-lqd-zindex="true">
-									<div class="lqd-fb-inner lqd-overlay">
-										<div class="lqd-fb-shadow"></div>
-										<div class="flex flex-wrap items-center lqd-overlay perspective backface-hidden"
-											data-hover3d="true">
-											<div
-												class="lqd-fb-content-wrap lqd-overlay will-change-transform transform-style-3d backface-hidden"
-												data-stacking-factor="0.5">
-												<div class="lqd-fb-img lqd-overlay rounded-4 overflow-hidden">
-													<figure class="w-full h-full" data-responsive-bg="true">
-														<img class="h-full object-cover visibility-hidden" width="722" height="813"
-															src="./assets/images/case-studies/case-studies-row-4.jpg" alt="case studies">
-													</figure>
-													<div class="lqd-fb-bg lqd-overlay"></div>
-													<div class="lqd-fb-hover-overlay lqd-overlay"></div>
-												</div>
-												<div class="lqd-fb-content lqd-overlay flex items-end">
-													<div class="lqd-fb-content-inner relative w-full py-3rem px-3/5rem">
-														<span class="lqd-fb-icon flex mb-2rem">
-															<i class="lqd-icn-ess icon-lqd-smile"></i>
-														</span>
-														<h6 class="mb-1rem font-bold uppercase ltr-sp-2">FOR DEVELOPERS AND STARTUPS</h6>
-														<h2 class="mb-0 font-bold text-32">Motion Design</h2>
-													</div>
-												</div>
-											</div>
+							<div class="col col-12 col-md-6 col-lg-4 px-20">
+								<article class="lqd-pf-item relative lqd-pf-item-style-2 pf-details-h-str">
+									<div class="lqd-pf-item-inner">
+										<div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
+											<figure>
+												<img src="./assets/images/urunler/geogridler.webp" class="w-full" alt="Geogridler">
+											</figure>
+											<span
+												class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-54 text-white bg-black-10">
+												<i class="lqd-icn-ess icon-md-arrow-forward inline-block opacity-0 transition-all"></i>
+											</span>
 										</div>
+										<div class="lqd-pf-details">
+											<h2 class="mb-0/2em h5">Geogridler</h2>
+											<ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
+												<li>
+													<a href="#">Geosentetik</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="lqd-overlay lqd-pf-overlay-link lqd-cc-icon-trigger"></a>
 									</div>
-								</div>
+								</article>
+							</div>
+							<div class="col col-12 col-md-6 col-lg-4 px-20">
+								<article class="lqd-pf-item relative lqd-pf-item-style-2 pf-details-h-str">
+									<div class="lqd-pf-item-inner">
+										<div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
+											<figure>
+												<img src="./assets/images/urunler/gabionlar.webp" class="w-full" alt="Gabionlar">
+											</figure>
+											<span
+												class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-54 text-white bg-black-10">
+												<i class="lqd-icn-ess icon-md-arrow-forward inline-block opacity-0 transition-all"></i>
+											</span>
+										</div>
+										<div class="lqd-pf-details">
+											<h2 class="mb-0/2em h5">Gabionlar</h2>
+											<ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
+												<li>
+													<a href="#">Geoarme Duvar</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="lqd-overlay lqd-pf-overlay-link lqd-cc-icon-trigger"></a>
+									</div>
+								</article>
+							</div>
+							<div class="col col-12 col-md-6 col-lg-4 px-20">
+								<article class="lqd-pf-item relative lqd-pf-item-style-2 pf-details-h-str">
+									<div class="lqd-pf-item-inner">
+										<div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
+											<figure>
+												<img src="./assets/images/banner/toprakarme-duvar.jpg" class="w-full" alt="Test Ürünü">
+											</figure>
+											<span
+												class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-54 text-white bg-black-10">
+												<i class="lqd-icn-ess icon-md-arrow-forward inline-block opacity-0 transition-all"></i>
+											</span>
+										</div>
+										<div class="lqd-pf-details">
+											<h2 class="mb-0/2em h5">Test Ürünü</h2>
+											<ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
+												<li>
+													<a href="#">Geosentetik</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="lqd-overlay lqd-pf-overlay-link lqd-cc-icon-trigger"></a>
+									</div>
+								</article>
+							</div>
+							<div class="col col-12 col-md-6 col-lg-4 px-20">
+								<article class="lqd-pf-item relative lqd-pf-item-style-2 pf-details-h-str">
+									<div class="lqd-pf-item-inner">
+										<div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
+											<figure>
+												<img src="./assets/images/urunler/geogridler.webp" class="w-full" alt="Geogridler">
+											</figure>
+											<span
+												class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-54 text-white bg-black-10">
+												<i class="lqd-icn-ess icon-md-arrow-forward inline-block opacity-0 transition-all"></i>
+											</span>
+										</div>
+										<div class="lqd-pf-details">
+											<h2 class="mb-0/2em h5">Geogridler</h2>
+											<ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
+												<li>
+													<a href="#">Geosentetik</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="lqd-overlay lqd-pf-overlay-link lqd-cc-icon-trigger"></a>
+									</div>
+								</article>
+							</div>
+							<div class="col col-12 col-md-6 col-lg-4 px-20">
+								<article class="lqd-pf-item relative lqd-pf-item-style-2 pf-details-h-str">
+									<div class="lqd-pf-item-inner">
+										<div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
+											<figure>
+												<img src="./assets/images/urunler/gabionlar.webp" class="w-full" alt="Gabionlar">
+											</figure>
+											<span
+												class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-54 text-white bg-black-10">
+												<i class="lqd-icn-ess icon-md-arrow-forward inline-block opacity-0 transition-all"></i>
+											</span>
+										</div>
+										<div class="lqd-pf-details">
+											<h2 class="mb-0/2em h5">Gabionlar</h2>
+											<ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
+												<li>
+													<a href="#">Geoarme Duvar</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="lqd-overlay lqd-pf-overlay-link lqd-cc-icon-trigger"></a>
+									</div>
+								</article>
+							</div>
+							<div class="col col-12 col-md-6 col-lg-4 px-20">
+								<article class="lqd-pf-item relative lqd-pf-item-style-2 pf-details-h-str">
+									<div class="lqd-pf-item-inner">
+										<div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
+											<figure>
+												<img src="./assets/images/banner/toprakarme-duvar.jpg" class="w-full" alt="Test Ürünü">
+											</figure>
+											<span
+												class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-54 text-white bg-black-10">
+												<i class="lqd-icn-ess icon-md-arrow-forward inline-block opacity-0 transition-all"></i>
+											</span>
+										</div>
+										<div class="lqd-pf-details">
+											<h2 class="mb-0/2em h5">Test Ürünü</h2>
+											<ul class="reset-ul inline-nav lqd-pf-cat inline-flex relative z-2">
+												<li>
+													<a href="#">Geosentetik</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="lqd-overlay lqd-pf-overlay-link lqd-cc-icon-trigger"></a>
+									</div>
+								</article>
 							</div>
 						</div>
 					</div>
@@ -816,7 +873,7 @@
 				<!-- End How It Work -->
 
 				<!-- Start Contact Info -->
-				<section class="lqd-section contact-info pt-10 pb-80" id="iletisim" data-section-luminosity="light">
+				<section class="lqd-section contact-info py-150" id="iletisim" data-section-luminosity="light">
 					<div class="container">
 						<div class="row items-center">
 							<div class="col col-12 col-md-2">

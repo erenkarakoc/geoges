@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="./assets/css/utility.css">
 	<link rel="stylesheet" href="./assets/css/base.css">
 	<link rel="stylesheet" href="./assets/css/asymmetric-agency.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,29 +36,13 @@
 	<div id="wrap">
 		<div class="lqd-sticky-placeholder hidden"></div>
 
-		<header
-			class="site-header main-header sticky-header-noshadow main-header-dynamiccolors bg-center-top bg-repeat bg-white"
-			style="background-image: url(./assets/images/bg-lines.svg);" data-sticky-header="true"
+		<header class="site-header main-header sticky-header-noshadow main-header-dynamiccolors" data-sticky-header="true"
 			data-sticky-values-measured="false"
 			data-sticky-options='{"disableOnMobile":true,"stickyTrigger":"first-section","dynamicColors":true}'>
 			<div class="lqd-head-sec-wrap lqd-hide-onstuck relative pr-35 pl-20 md:hidden">
 				<div class="w-full flex items-center justify-between">
-					<div class="col col-lg-5 lqd-head-col flex-grow-1 justify-start">
-						<div class="header-module module-primary-nav static">
-							<div class="navbar-collapse lqd-submenu-default-style inline-flex flex-col items-stretch h-full"
-								aria-expanded="false" role="navigation">
-								<div class="header-module module-button ml-25 module-button lg:hidden">
-									<a href="#iletisim"
-										class="btn btn-solid btn-sm round border-thin leading-1/6em tracking-0 text-15 rounded-4 bg-black border-black"
-										data-lity="#iletisim">
-										<span class="btn-txt text-white" data-text="İletişime Geç">İletişime Geç</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col col-lg-2 lqd-head-col flex-grow-1 justify-center">
-						<div class="header-module module-logo no-rotate navbar-brand-plain pt-40 pb-30">
+					<div class="col col-lg-2 lqd-head-col flex-grow-1 justify-start">
+						<div class="header-module module-logo no-rotate navbar-brand-plain pt-30 pb-30">
 							<a class="navbar-brand" href="/" rel="home">
 								<span class="navbar-brand-inner">
 									<img class="logo-light" src="./assets/images/logo-light.svg" alt="Geoges">
@@ -66,7 +51,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col col-lg-5 auto lqd-head-col flex-grow-1 justify-end">
+					<div class="col col-lg-8 auto lqd-head-col flex-grow-1 justify-center">
 						<div class="header-module module-primary-nav static">
 							<div class="navbar-collapse lqd-submenu-default-style inline-flex flex-col items-stretch h-full"
 								aria-expanded="false" role="navigation">
@@ -75,8 +60,8 @@
 									data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll="true"
 									data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
 									<li>
-										<a href="#ana-sayfa">
-											Ana Sayfa
+										<a href="hakkimizda.html">
+											Hakkımızda
 										</a>
 									</li>
 									<li>
@@ -90,11 +75,25 @@
 										</a>
 									</li>
 									<li>
-										<a href="hakkimizda.html">
-											Hakkımızda
+										<a href="referanslarimiz.html">
+											Referanslar
 										</a>
 									</li>
 								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col col-lg-2 lqd-head-col flex-grow-1 justify-end">
+						<div class="header-module module-primary-nav static">
+							<div class="navbar-collapse lqd-submenu-default-style inline-flex flex-col items-stretch h-full"
+								aria-expanded="false" role="navigation">
+								<div class="header-module module-button ml-25 module-button lg:hidden">
+									<a href="#iletisim"
+										class="btn btn-solid btn-sm round border-thin leading-1/6em tracking-0 text-15 rounded-4 bg-black border-black"
+										data-lity="#iletisim">
+										<span class="btn-txt text-white" data-text="İletişime Geç">İletişime Geç</span>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -105,7 +104,6 @@
 		<main class="content bg-center-top bg-repeat z-2" id="lqd-site-content"
 			style="background-image: url(./assets/images/bg-lines.svg);">
 			<div id="lqd-contents-wrap">
-
 				<!-- Start Banner -->
 				<section id="banner" class="lqd-section banner lg:m-0" data-section-luminosity="dark">
 					<div class="container-fluid">
@@ -298,6 +296,20 @@
 											</div>
 										</div>
 									</div>
+
+									<span class="lqd-vslider-nav-prev">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+											<path fill="currentColor"
+												d="m10.8 12l3.9 3.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.212-.325T8.425 12t.063-.375t.212-.325l4.6-4.6q.275-.275.7-.275t.7.275t.275.7t-.275.7z" />
+										</svg>
+									</span>
+									<span class="lqd-vslider-nav-next">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+											<path fill="currentColor"
+												d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.6 4.6q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7z" />
+										</svg>
+									</span>
+
 									<span class="lqd-extra-cursor fixed pointer-events-none"></span>
 								</div>
 							</div>
@@ -306,116 +318,144 @@
 				</section>
 				<!-- End Banner -->
 
-				<!-- Start Clients -->
-				<section style="display: none;"
-					class="lqd-section clients mb-60 py-55 border-right border-bottom border-left border-black-10 transition-all md:hidden"
-					data-section-luminosity="light">
+				<!-- Start Applications -->
+				<section id="applications" class="lqd-section applications py-50" data-section-luminosity="light">
 					<div class="container">
-						<div class="row items-center">
-							<div class="col col-md-2 col-12">
-								<div class="single-image">
-									<figure class="text-center">
-										<img width="80" height="11" src="./assets/images/client-dhl.svg" alt="clients">
-									</figure>
-								</div>
-							</div>
-							<div class="col col-md-2 col-12">
-								<div class="single-image px-30">
-									<figure class="text-center">
-										<img width="80" height="11" src="./assets/images/client-apper.svg" alt="clients">
-									</figure>
-								</div>
-							</div>
-							<div class="col col-md-2 col-12">
-								<div class="single-image px-30">
-									<figure class="text-center">
-										<img width="121" height="23" src="./assets/images/client-dropcam.svg" alt="clients">
-									</figure>
-								</div>
-							</div>
-							<div class="col col-md-2 col-12">
-								<div class="single-image px-30">
-									<figure class="text-center">
-										<img width="83" height="25" src="./assets/images/client-amazon-5.svg" alt="clients">
-									</figure>
-								</div>
-							</div>
-							<div class="col col-md-2 col-12">
-								<div class="single-image">
-									<figure class="text-center">
-										<img width="86" height="31" src="./assets/images/client-yahoo.svg" alt="clients">
-									</figure>
-								</div>
-							</div>
-							<div class="col col-md-2 col-12">
-								<div class="single-image px-30">
-									<figure class="text-center">
-										<img width="85" height="25" src="./assets/images/client-logitecg-5.svg" alt="clients">
-									</figure>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End Clients -->
-
-				<!-- Start Text Box Number -->
-				<section class="lqd-section text-box-number mt-50 mr-150 py-50 md:mt-0" data-section-luminosity="light"
-					data-custom-animations="true"
-					data-ca-options='{"triggerHandler": "inview", "animationTarget": ".animation-element", "duration" : 1600 , "delay": "250", "ease": "power4.out", "direction": "forward", "initValues": {"opacity" : 0} , "animations": {"opacity" : 1}}'>
-					<div class="container-fluid">
 						<div class="row">
-							<div class="col col-12 col-xl-3 col-lg-4 offset-xl-1">
-								<div class="flex flex-col module-box-1 animation-element">
-									<div class="ld-fancy-heading relative">
-										<h3 class="ld-fh-element mb-0/85em">İşinizi sahada güçlü kılın.</h3>
+							<div class="col col-12 col-lg-6 offset-lg-3">
+								<div class="flex flex-col mb-40 text-center md:text-start">
+									<div class="ld-fancy-heading">
+										<h2 class="ld-fh-element mb-0/5em">Uygulamalarımız</h2>
 									</div>
-									<div class="ld-fancy-heading relative">
-										<p class="ld-fh-element text-14 leading-1/8em mb-0/5em">Yüksek kaliteli Geosentetik malzemeler ve
-											donatılı duvar sistemleriyle projelerinizi sahada daha güçlü kılın. Müşterileriniz, yerinde
-											uygulamaların dayanıklılığını ve verimliliğini deneyimleyecek.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col col-12 col-xl-3 col-lg-4 offset-xl-1">
-								<div class="flex flex-col mt-100 module-box-2 animation-element md:m-0">
-									<div class="w-full relative h-40 ld-empty-space hidden md:block"></div>
-									<div class="ld-fancy-heading relative">
-										<h3 class="ld-fh-element mb-0/85em">Geosentetik ürünlerinizi öne çıkarın.</h3>
-									</div>
-									<div class="ld-fancy-heading relative">
-										<p class="ld-fh-element text-14 leading-1/8em mb-0/5em">Saha uygulamaları ve projeler için üstün
-											mühendislik çözümleri sunuyoruz. Geoges olarak, yenilikçi ürünlerimiz ve saha hizmetlerimizle
-											projelerinizi benzersiz kılmak ve sektörde fark yaratmak için tutkuyla çalışıyoruz.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col col-12 col-xl-3 col-lg-4 offset-xl-1">
-								<div class="flex flex-col mt-200 module-box-3 animation-element md:m-0">
-									<div class="w-full relative h-40 ld-empty-space hidden md:block"></div>
-									<div class="ld-fancy-heading relative">
-										<h3 class="ld-fh-element mb-0/85em">Hedef kitlenizle birlikte büyüyün.</h3>
-									</div>
-									<div class="ld-fancy-heading relative">
-										<p class="ld-fh-element text-14 leading-1/8em mb-0/5em">Saha uygulamaları ve projeler için üstün
-											mühendislik çözümleri sunuyoruz. Geoges olarak, yenilikçi ürünlerimiz ve saha hizmetlerimizle
-											projelerinizi benzersiz kılmak ve sektörde fark yaratmak için tutkuyla çalışıyoruz.</p>
+									<div class="ld-fancy-heading">
+										<p class="ld-fh-element mb-0/5em">
+											Geosentetikler ve donatılı zemin duvarı istinat yapılarının süre, güvenirlirlik, maliyet açısından
+											konvansiyonel istinat yapılarına göre daha optimal çözüm düzeyine ulaşmasına katkı sunmasıdır.
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
+
+						<div class="swiper applications-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article id="post-3441" class="lqd-lp lqd-lp lqd-lp-style-20 lqd-lp-hover-img-zoom relative">
+										<div class="lqd-lp-img relative mb-1em overflow-hidden">
+											<figure class="mb-0 relative">
+												<img src="./assets/images/banner/gabion.jpg" class="w-full" alt="Gabion Duvarlar">
+											</figure>
+										</div>
+										<header class="lqd-lp-header mb-0/85em">
+											<h5 class="lqd-lp-title text-22 m-0">Gabion Duvarlar</h5>
+										</header>
+										<div class="lqd-lp-excerpt mb-1em">
+											Gabion Duvarlar, taş, kaya, çakıl veya benzeri malzemelerle doldurulan, genellikle çelik tel
+											kafeslerden oluşan esnek ve geçirgen yapısal elemanlardır.
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article id="post-3440" class="lqd-lp lqd-lp lqd-lp-style-20 lqd-lp-hover-img-zoom relative">
+										<div class="lqd-lp-img relative mb-1em overflow-hidden">
+											<figure class="mb-0 relative">
+												<img src="./assets/images/banner/toprakarme-duvar.jpg" class="w-full" alt="Erozyon Kontrolü">
+											</figure>
+										</div>
+										<header class="lqd-lp-header mb-0/85em">
+											<h5 class="lqd-lp-title text-22 m-0">Erozyon Kontrolü</h5>
+										</header>
+										<div class="lqd-lp-excerpt mb-1em">
+											Erozyon kontrolü, toprak kaybına neden olan su ve rüzgar etkilerini önlemek için çeşitli
+											yöntemlerle
+											gerçekleştirilen koruma işlemleridir.
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article id="post-3435" class="lqd-lp lqd-lp lqd-lp-style-20 lqd-lp-hover-img-zoom relative">
+										<div class="lqd-lp-img relative mb-1em overflow-hidden">
+											<figure class="mb-0 relative">
+												<img src="./assets/images/banner/geoarme-duvar.jpg" class="w-full"
+													alt="Geosentetik Donatılı Duvar">
+											</figure>
+										</div>
+										<header class="lqd-lp-header mb-0/85em">
+											<h5 class="lqd-lp-title text-22 m-0">Geosentetik Donatılı Duvar</h5>
+										</header>
+										<div class="lqd-lp-excerpt mb-1em">
+											Geosentetik Donatılı Duvarlar, doğayla uyumlu, çevre dostu mühendislik çözümleri sunarak
+											geleneksel
+											beton duvarların yerine geçer ve yüksek dayanıklılık sağlar.
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article id="post-3441" class="lqd-lp lqd-lp lqd-lp-style-20 lqd-lp-hover-img-zoom relative">
+										<div class="lqd-lp-img relative mb-1em overflow-hidden">
+											<figure class="mb-0 relative">
+												<img src="./assets/images/banner/gabion.jpg" class="w-full" alt="Gabion Duvarlar">
+											</figure>
+										</div>
+										<header class="lqd-lp-header mb-0/85em">
+											<h5 class="lqd-lp-title text-22 m-0">Gabion Duvarlar</h5>
+										</header>
+										<div class="lqd-lp-excerpt mb-1em">
+											Gabion Duvarlar, taş, kaya, çakıl veya benzeri malzemelerle doldurulan, genellikle çelik tel
+											kafeslerden oluşan esnek ve geçirgen yapısal elemanlardır.
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article id="post-3440" class="lqd-lp lqd-lp lqd-lp-style-20 lqd-lp-hover-img-zoom relative">
+										<div class="lqd-lp-img relative mb-1em overflow-hidden">
+											<figure class="mb-0 relative">
+												<img src="./assets/images/banner/toprakarme-duvar.jpg" class="w-full" alt="Erozyon Kontrolü">
+											</figure>
+										</div>
+										<header class="lqd-lp-header mb-0/85em">
+											<h5 class="lqd-lp-title text-22 m-0">Erozyon Kontrolü</h5>
+										</header>
+										<div class="lqd-lp-excerpt mb-1em">
+											Erozyon kontrolü, toprak kaybına neden olan su ve rüzgar etkilerini önlemek için çeşitli
+											yöntemlerle
+											gerçekleştirilen koruma işlemleridir.
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article id="post-3435" class="lqd-lp lqd-lp lqd-lp-style-20 lqd-lp-hover-img-zoom relative">
+										<div class="lqd-lp-img relative mb-1em overflow-hidden">
+											<figure class="mb-0 relative">
+												<img src="./assets/images/banner/geoarme-duvar.jpg" class="w-full"
+													alt="Geosentetik Donatılı Duvar">
+											</figure>
+										</div>
+										<header class="lqd-lp-header mb-0/85em">
+											<h5 class="lqd-lp-title text-22 m-0">Geosentetik Donatılı Duvar</h5>
+										</header>
+										<div class="lqd-lp-excerpt mb-1em">
+											Geosentetik Donatılı Duvarlar, doğayla uyumlu, çevre dostu mühendislik çözümleri sunarak
+											geleneksel
+											beton duvarların yerine geçer ve yüksek dayanıklılık sağlar.
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
 					</div>
 				</section>
-				<!-- End Text Box Number -->
+				<!-- End Applications -->
 
-				<!-- Start case Studies -->
+				<!-- Start Case Studies -->
 				<section id="case-studies" class="lqd-section case-studies py-50" data-section-luminosity="light">
 					<div class="container">
 						<div class="row">
 							<div class="col col-12 col-lg-6 offset-lg-3 text-center">
 								<div class="mb-35 px-5percent md:px-0">
 									<div class="ld-fancy-heading">
-										<h2 class="ld-fh-element mb-0/5em">Ürünler</h2>
+										<h2 class="ld-fh-element mb-0/5em">Ürünlerimiz</h2>
 									</div>
 									<div class="ld-fancy-heading">
 										<p class="ld-fh-element mb-0/5em">Geoges olarak, yüksek kaliteli Geosentetik ve donatılı duvar
@@ -471,7 +511,8 @@
 															<option data-filter=".geoarme-duvar" value=".geoarme-duvar">Geoarme Duvar</option>
 														</select>
 													</div>
-													<a href="#" class="mb-0/5me text-13 text-black-80 btn btn-naked btn-hover-swp btn-has-label">
+													<a href="urunler.html"
+														class="mb-0/5me text-13 text-black-80 btn btn-naked btn-hover-swp btn-has-label">
 														<span class="inline-flex justify-center items-center relative p-0">
 															<span class="btn-txt" data-text="Tümünü Gör">Tümünü Gör</span>
 															<span class="btn-icon">
@@ -566,7 +607,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- End case Studies -->
+				<!-- End Case Studies -->
 
 				<!-- Start Text Box Single -->
 				<section class="lqd-section text-box-single py-50" data-section-luminosity="light">
@@ -581,6 +622,10 @@
 										yenilikçi anlayışıyla içinde bulunduğu sektörün geleceğine yatırım yapıyor.
 									</p>
 								</div>
+								<a href="hakkimizda.html"
+									class="btn btn-solid btn-sm round border-thin leading-1/6em tracking-0 text-15 rounded-4 bg-black border-black mt-30">
+									<span class="btn-txt text-white" data-text="Biz Kimiz?">Biz Kimiz?</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -703,6 +748,55 @@
 					</div>
 				</section>
 				<!-- End Icon Box Text -->
+
+				<!-- Start Text Box Number -->
+				<section class="lqd-section text-box-number mt-50 mr-150 py-50 md:mt-0" data-section-luminosity="light"
+					data-custom-animations="true"
+					data-ca-options='{"triggerHandler": "inview", "animationTarget": ".animation-element", "duration" : 1600 , "delay": "250", "ease": "power4.out", "direction": "forward", "initValues": {"opacity" : 0} , "animations": {"opacity" : 1}}'>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col col-12 col-xl-3 col-lg-4 offset-xl-1">
+								<div class="flex flex-col module-box-1 animation-element">
+									<div class="ld-fancy-heading relative">
+										<h3 class="ld-fh-element mb-0/85em">İşinizi sahada güçlü kılın.</h3>
+									</div>
+									<div class="ld-fancy-heading relative">
+										<p class="ld-fh-element text-14 leading-1/8em mb-0/5em">Yüksek kaliteli Geosentetik malzemeler ve
+											donatılı duvar sistemleriyle projelerinizi sahada daha güçlü kılın. Müşterileriniz, yerinde
+											uygulamaların dayanıklılığını ve verimliliğini deneyimleyecek.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-xl-3 col-lg-4 offset-xl-1">
+								<div class="flex flex-col mt-100 module-box-2 animation-element md:m-0">
+									<div class="w-full relative h-40 ld-empty-space hidden md:block"></div>
+									<div class="ld-fancy-heading relative">
+										<h3 class="ld-fh-element mb-0/85em">Geosentetik ürünlerinizi öne çıkarın.</h3>
+									</div>
+									<div class="ld-fancy-heading relative">
+										<p class="ld-fh-element text-14 leading-1/8em mb-0/5em">Saha uygulamaları ve projeler için üstün
+											mühendislik çözümleri sunuyoruz. Geoges olarak, yenilikçi ürünlerimiz ve saha hizmetlerimizle
+											projelerinizi benzersiz kılmak ve sektörde fark yaratmak için tutkuyla çalışıyoruz.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col col-12 col-xl-3 col-lg-4 offset-xl-1">
+								<div class="flex flex-col mt-200 module-box-3 animation-element md:m-0">
+									<div class="w-full relative h-40 ld-empty-space hidden md:block"></div>
+									<div class="ld-fancy-heading relative">
+										<h3 class="ld-fh-element mb-0/85em">Hedef kitlenizle birlikte büyüyün.</h3>
+									</div>
+									<div class="ld-fancy-heading relative">
+										<p class="ld-fh-element text-14 leading-1/8em mb-0/5em">Saha uygulamaları ve projeler için üstün
+											mühendislik çözümleri sunuyoruz. Geoges olarak, yenilikçi ürünlerimiz ve saha hizmetlerimizle
+											projelerinizi benzersiz kılmak ve sektörde fark yaratmak için tutkuyla çalışıyoruz.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Text Box Number -->
 
 				<!-- Start FAQ -->
 				<section class="lqd-section faq py-50" data-section-luminosity="light">
@@ -1058,92 +1152,270 @@
 				</section>
 				<!-- End Testimonials -->
 
-				<!-- Start Blog -->
-				<section id="blog" style="display: none;" class="lqd-section blog py-50" data-section-luminosity="light">
+				<!-- Start Clients -->
+				<section
+					class="lqd-section clients mb-60 py-55 transition-all md:hidden"
+					data-section-luminosity="light">
 					<div class="container">
-						<div class="row">
-							<div class="col col-12 col-lg-6 offset-lg-3">
-								<div class="flex flex-col mb-40 text-center md:text-start">
-									<div class="ld-fancy-heading">
-										<h2 class="ld-fh-element mb-0/5em">Latest news in the office</h2>
-									</div>
-									<div class="ld-fancy-heading">
-										<p class="ld-fh-element mb-0/5em">Our design services starts and ends with a best-in-class
-											experience strategy that builds brands.</p>
+						<div class="swiper clients-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/1.png" alt="Referans">
+										</figure>
 									</div>
 								</div>
-							</div>
-							<div class="col col-lg-12"></div>
-							<div class="col col-12 col-md-6 col-lg-4 px-15 mb-30">
-								<article id="post-3441" class="lqd-lp lqd-lp lqd-lp-style-20 lqd-lp-hover-img-zoom relative">
-									<div class="lqd-lp-img relative mb-1em overflow-hidden">
-										<figure class="mb-0 relative">
-											<img width="700" height="450" src="./assets/images/blog-1.jpg" class="w-full"
-												alt="Latest news in the office">
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/2.png" alt="Referans">
 										</figure>
 									</div>
-									<div class="lqd-lp-meta mb-1/5em">
-										<ul class="lqd-lp-cat reset-ul inline-nav lqd-lp-cat-solid">
-											<li class="mb-0/5em">
-												<a href="#">Company</a>
-											</li>
-										</ul>
-									</div>
-									<header class="lqd-lp-header mb-0/85em">
-										<h5 class="lqd-lp-title text-22 m-0">Investment trend monitor: Top trends in 2021</h5>
-									</header>
-									<div class="lqd-lp-excerpt mb-1em">You want to succeed, surround yourself with the right kind of
-										people who will support and encourage you all the</div>
-								</article>
-							</div>
-							<div class="col col-12 col-md-6 col-lg-4 px-15 mb-30">
-								<article id="post-3440" class="lqd-lp lqd-lp lqd-lp-style-20 lqd-lp-hover-img-zoom relative">
-									<div class="lqd-lp-img relative mb-1em overflow-hidden">
-										<figure class="mb-0 relative">
-											<img width="700" height="450" src="./assets/images/blog-2.jpg" class="w-full"
-												alt="Investment trend monitor: Top trends in 2021">
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/3.png" alt="Referans">
 										</figure>
 									</div>
-									<div class="lqd-lp-meta mb-1/5em">
-										<ul class="lqd-lp-cat reset-ul inline-nav lqd-lp-cat-solid">
-											<li class="mb-0/5em">
-												<a href="#">Company</a>
-											</li>
-										</ul>
-									</div>
-									<header class="lqd-lp-header mb-0/85em">
-										<h5 class="lqd-lp-title text-22 m-0">Free advertising for your online business</h5>
-									</header>
-									<div class="lqd-lp-excerpt mb-1em">You want to succeed, surround yourself with the right kind of
-										people who will support and encourage you all the</div>
-								</article>
-							</div>
-							<div class="col col-12 col-md-6 col-lg-4 px-15 mb-30">
-								<article id="post-3435" class="lqd-lp lqd-lp lqd-lp-style-20 lqd-lp-hover-img-zoom relative">
-									<div class="lqd-lp-img relative mb-1em overflow-hidden">
-										<figure class="mb-0 relative">
-											<img width="700" height="450" src="./assets/images/blog-3.jpg" class="w-full"
-												alt="Free advertising for your online business">
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/4.png" alt="Referans">
 										</figure>
 									</div>
-									<div class="lqd-lp-meta mb-1/5em">
-										<ul class="lqd-lp-cat reset-ul inline-nav lqd-lp-cat-solid">
-											<li class="mb-0/5em">
-												<a href="#">Company</a>
-											</li>
-										</ul>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/5.png" alt="Referans">
+										</figure>
 									</div>
-									<header class="lqd-lp-header mb-0/85em">
-										<h5 class="lqd-lp-title text-22 m-0">Investment trend monitor: Top trends in 2017</h5>
-									</header>
-									<div class="lqd-lp-excerpt mb-1em">You want to succeed, surround yourself with the right kind of
-										people who will support and encourage you all the</div>
-								</article>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/6.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/7.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/8.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/9.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/10.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/11.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/12.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/13.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/14.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/15.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/16.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/17.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/18.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/19.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/20.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/21.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/22.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/23.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/24.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/25.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/26.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/27.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/28.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/29.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/30.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/31.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/32.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/33.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/34.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/35.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="single-image">
+										<figure class="text-center">
+											<img height="25" src="./assets/images/referanslarimiz/36.png" alt="Referans">
+										</figure>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<!-- End Blog -->
+				<!-- End Clients -->
 
 				<!-- Start Contact Info -->
 				<section class="lqd-section contact-info py-50 md:hidden" data-section-luminosity="light">
@@ -1467,6 +1739,77 @@
 	<script src="./assets/js/liquid-gdpr.min.js"></script>
 	<script src="./assets/js/theme.min.js"></script>
 	<script src="./assets/js/liquid-ajax-contact-form.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script>
+		const lqdvSliderPrev = document.querySelector(".lqd-vslider-nav-prev");
+		const lqdvSliderNext = document.querySelector(".lqd-vslider-nav-next");
+
+		const checkPrevNext = () => {
+			const active = document.querySelector(".lqd-vslider-menu .module-item.is-active");
+			const currentIdx = Number([...active.classList].find(cls => cls.startsWith('module-item-')).split("-")[2]);
+			const sliderItems = document.querySelectorAll(".lqd-vslider-menu .module-item");
+			const sliderLength = sliderItems.length;
+
+			if (currentIdx === 1) lqdvSliderPrev.classList.add("disabled");
+			else lqdvSliderPrev.classList.remove("disabled");
+
+			if (currentIdx === sliderLength) lqdvSliderNext.classList.add("disabled");
+			else lqdvSliderNext.classList.remove("disabled");
+		};
+
+		const lqdvSliderGoPrev = () => {
+			const active = document.querySelector(".lqd-vslider-menu .module-item.is-active");
+			const currentIdx = Number([...active.classList].find(cls => cls.startsWith('module-item-')).split("-")[2]);
+			const prevElement = document.querySelector(`.lqd-vslider-menu .module-item-${currentIdx - 1}`);
+
+			if (prevElement) prevElement.querySelector(".lqd-webgl-slideshow-link").click();
+			checkPrevNext();
+		};
+
+		const lqdvSliderGoNext = () => {
+			const active = document.querySelector(".lqd-vslider-menu .module-item.is-active");
+			const currentIdx = Number([...active.classList].find(cls => cls.startsWith('module-item-')).split("-")[2]);
+			const nextElement = document.querySelector(`.lqd-vslider-menu .module-item-${currentIdx + 1}`);
+
+			if (nextElement) nextElement.querySelector(".lqd-webgl-slideshow-link").click();
+			checkPrevNext();
+		};
+
+		lqdvSliderPrev.addEventListener("click", lqdvSliderGoPrev);
+		lqdvSliderNext.addEventListener("click", lqdvSliderGoNext);
+
+		const observer = new MutationObserver(mutationsList => {
+			for (let mutation of mutationsList) if (mutation.type === 'attributes' && mutation.attributeName === 'class') checkPrevNext();
+		});
+
+		document.querySelectorAll('.module-item').forEach(item => observer.observe(item, { attributes: true }));
+
+		// Swipers
+		const applicationsSwiper = new Swiper('.applications-swiper', {
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				pauseOnMouseEnter: true,
+			},
+			slidesPerView: 3,
+			spaceBetween: 10,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+
+		const clientsSwiper = new Swiper('.clients-swiper', {
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				pauseOnMouseEnter: true,
+			},
+			slidesPerView: 6,
+			spaceBetween: 50,
+		});
+	</script>
 
 	<!-- Start custom cursor -->
 	<div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>

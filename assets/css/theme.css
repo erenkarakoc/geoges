@@ -8338,8 +8338,8 @@ MOBULE HEADER
 }
 
 .lqd-extra-cursor {
-  --extra-cc-w: 390px;
-  --extra-cc-h: 390px;
+  --extra-cc-w: 50px;
+  --extra-cc-h: 50px;
   width: var(--extra-cc-w);
   height: var(--extra-cc-h);
   top: calc(var(--extra-cc-w) / 2 * -1);
@@ -19974,6 +19974,19 @@ ul.pagination .prev {
 7.38. Portfolio
 *******************************************/
 
+.lqd-section.case-studies-row#urunlerimiz .lqd-pf-img {
+  aspect-ratio: 1.4 / 1;
+}
+.lqd-section.case-studies-row#urunlerimiz .lqd-pf-img figure {
+  height: 100%;
+  width: 100%;
+}
+.lqd-section.case-studies-row#urunlerimiz .lqd-pf-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .case-studies .lqd-pf-img {
   aspect-ratio: 1 / 0.8;
 }
@@ -25123,6 +25136,59 @@ ul.pagination .prev {
   animation-delay: 1.5166666667s;
 }
 
+.lqd-vslider-nav-prev,
+.lqd-vslider-nav-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #ffffff30;
+  border-radius: 50%;
+  background-color: #ffffff60;
+  color: #fff;
+  z-index: 9;
+  transition: all 0.2s ease-out;
+}
+
+.lqd-vslider-nav-prev {
+  left: 10px;
+}
+.lqd-vslider-nav-next {
+  right: 10px;
+}
+
+.lqd-vslider-nav-prev:not(.disabled):hover,
+.lqd-vslider-nav-next:not(.disabled):hover {
+  background-color: #ffffff30;
+}
+
+.lqd-vslider-nav-prev.disabled,
+.lqd-vslider-nav-next.disabled {
+  cursor: default;
+  background-color: #00000070;
+  border-color: #ffffff20;
+}
+
+.lqd-vslider-nav-prev svg,
+.lqd-vslider-nav-next svg {
+  height: 20px;
+  width: 20px;
+}
+
+.lqd-vslider-nav-prev:not(.disabled):hover ~ .lqd-extra-cursor,
+.lqd-vslider-nav-next:not(.disabled):hover ~ .lqd-extra-cursor {
+  background-color: #fff;
+}
+
+.lqd-extra-cursor {
+  transition: all 0.2s ease-out;
+}
+
 .lqd-vslider-images:after {
   content: "";
   display: inline-block;
@@ -26006,6 +26072,29 @@ ul.pagination .prev {
 /*******************************************
 8.1. Blog
 *******************************************/
+
+.lqd-section.applications .lqd-lp-img {
+  aspect-ratio: 1.5 / 1;
+}
+.lqd-section.applications .lqd-lp-img figure {
+  height: 100%;
+  width: 100%;
+}
+.lqd-section.applications .lqd-lp-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.applications-swiper {
+  padding-bottom: 30px !important;
+}
+.applications-swiper .swiper-pagination {
+  bottom: 0px !important;
+}
+.applications-swiper .swiper-pagination-bullet-active {
+  background-color: var(--lqd-color-primary) !important;
+}
 
 #lqd-contents-wrap > .lqd-lp-grid {
   padding-top: 45px;
@@ -29934,4 +30023,8 @@ nav.post-nav .nav-next .nav-subtitle svg {
   align-items: center;
   justify-content: center;
   font: normal 1em/1 "lqd-essentials";
+}
+
+.lqd-section.clients .single-image img {
+  user-select: none;
 }
